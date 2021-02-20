@@ -5,17 +5,17 @@ import {faHeart as Heart} from "@fortawesome/free-solid-svg-icons";
 import {faHeart} from "@fortawesome/free-regular-svg-icons";
 import Avatar from "react-avatar";
 
+let getRandom = () => Math.floor(Math.random() * 10) + 1
 
-const Comment = () => {
+let getRandomLikeDislike = () => {
+    return getRandom() % 2 == 0 ? <span><FontAwesomeIcon icon={Heart} style={{color: "red"}}/></span>
+        : <span><FontAwesomeIcon icon={faHeart}/></span>;
+}
+
+const Comment = (props) => {
 
     let username = Faker.internet.userName();
 
-    let getRandom = () => Math.floor(Math.random() * 10) + 1
-
-    let getRandomLikeDislike = () => {
-        return getRandom() % 2 == 0 ? <span><FontAwesomeIcon icon={Heart} style={{color: "red"}}/></span>
-            : <span><FontAwesomeIcon icon={faHeart}/></span>;
-    }
     return (
         <div className="decrease-fontsize">
             <div className="pl-1" style={{fontWeight: 'bold'}}>Comments</div>

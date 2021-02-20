@@ -9,15 +9,14 @@ import Comment from "./Comment";
 
 
 
-const Post = () => {
-
+const Post = (props) => {
     let username = Faker.internet.userName();
 
     return (
       <div>
           <Container>
               <Row>
-                  <Col xs={12} className="d-flex justify-content-center mx-auto">
+                  <Col xs={12} className="d-flex justify-content-center mx-auto mt-4">
                       <Card className="card-centerize">
                           <Card.Title>
                               <Row>
