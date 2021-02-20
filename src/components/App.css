@@ -1,0 +1,18 @@
+.App{
+    margin-top: 10px;
+}
+.card-centerize{
+    width: 25rem;
+    border: None
+}
+
+.fix-pictures{
+    border-radius: 0px !important;
+}
+.decrease-fontsize{
+    font-size: small;
+}
+
+#auto-height{
+    height: auto !important;
+}
